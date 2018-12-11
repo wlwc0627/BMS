@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap后台管理系统</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-admin.css">
+</head>
+<body>
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Bootstrap</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">
+							<span class="glyphicon glyphicon-home"></span>&nbsp;
+							后台首页
+						</a>
+					</li>
+					<li>
+						<a href="user_list.html">
+							<span class="glyphicon glyphicon-user"></span>&nbsp;
+							用户管理
+						</a>
+					</li>
+					<li class="active">
+						<a href="content.html">
+							<span class="glyphicon glyphicon-list-alt"></span>&nbsp;
+							内容管理
+						</a>
+					</li>
+					<li>
+						<a href="tag.html">
+							<span class="glyphicon glyphicon-tags"></span>&nbsp;
+							标签管理
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<li class="dropdown">
+						  <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    admin
+						    <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dLabel">
+						    <li>
+						    	<a href="index.html">
+									<span class="glyphicon glyphicon-home"></span>&nbsp;
+						    		前台首页
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-user"></span>&nbsp;
+						    		个人主页
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-cog"></span>&nbsp;
+						    		个人设置
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-credit-card"></span>&nbsp;
+						    		账户中心
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-heart"></span>&nbsp;
+						    		我的收藏
+						    	</a>
+						    </li>
+						  </ul>
+						</li>
+					</li>
+					<li>
+						<a href="">
+							<span class="glyphicon glyphicon-off"></span>&nbsp;
+							退出
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	<!-- 导航 -->
+
+	<!-- 左侧边栏 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="list-group">
+				  	<a href="content.html" class="list-group-item active">文章管理</a>
+				  	<a href="content_post.html" class="list-group-item">添加文章</a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="page-header">
+					<h1>文章管理</h1>
+				</div>
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="content.html">文章列表</a>
+					</li>
+					<li>
+						<a href="content_post.html">添加文章</a>
+					</li>
+				</ul>
+				<div class="bs-example" data-example-id="striped-table">
+    				<table class="table table-striped">
+      					<thead>
+        					<tr>
+					          	<th>文章标题</th>
+					          	<th>作者</th>
+					          	<th>发布时间</th>
+					          	<th>操作</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					        <tr>
+					          	<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+					          	<td>朱朝兵</td>
+					          	<td>2018/08/08</td>
+					          	<td>
+									<div role="presentation" class="dropdown">
+								        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								          	操作&nbsp;<span class="caret"></span>
+								        </button>
+								        <ul class="dropdown-menu">
+								          <li><a href="#">编辑</a></li>
+								          <li><a href="#">删除</a></li>
+								          <li><a href="#">全局置顶</a></li>
+								           
+								        </ul>
+								    </div>
+					          	</td>
+					        </tr>
+					    </tbody>
+					</table>
+					<nav aria-label="Page navigation" class="pull-right">
+				  	<ul class="pagination">
+					    <li>
+					      	<a href="#" aria-label="Previous">
+					        	<span aria-hidden="true">&laquo;</span>
+					      	</a>
+					    </li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      	<a href="#" aria-label="Next">
+					        	<span aria-hidden="true">&raquo;</span>
+					      	</a>
+					    </li>
+					 </ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;www.10wm9.space&nbsp;&nbsp;鄂ICP备13014270号
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

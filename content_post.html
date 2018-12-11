@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap后台管理系统</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-admin.css">
+</head>
+<body>
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Bootstrap</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">
+							<span class="glyphicon glyphicon-home"></span>&nbsp;
+							后台首页
+						</a>
+					</li>
+					<li>
+						<a href="user_list.html">
+							<span class="glyphicon glyphicon-user"></span>&nbsp;
+							用户管理
+						</a>
+					</li>
+					<li class="active">
+						<a href="content.html">
+							<span class="glyphicon glyphicon-list-alt"></span>&nbsp;
+							内容管理
+						</a>
+					</li>
+					<li>
+						<a href="tag.html">
+							<span class="glyphicon glyphicon-tags"></span>&nbsp;
+							标签管理
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<li class="dropdown">
+						  <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    admin
+						    <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dLabel">
+						    <li>
+						    	<a href="index.html">
+									<span class="glyphicon glyphicon-home"></span>&nbsp;
+						    		前台首页
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-user"></span>&nbsp;
+						    		个人主页
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-cog"></span>&nbsp;
+						    		个人设置
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-credit-card"></span>&nbsp;
+						    		账户中心
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="">
+									<span class="glyphicon glyphicon-heart"></span>&nbsp;
+						    		我的收藏
+						    	</a>
+						    </li>
+						  </ul>
+						</li>
+					</li>
+					<li>
+						<a href="">
+							<span class="glyphicon glyphicon-off"></span>&nbsp;
+							退出
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	<!-- 导航 -->
+
+	<!-- 左侧边栏 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="list-group">
+				  	<a href="content.html" class="list-group-item">文章管理</a>
+				  	<a href="content_post.html" class="list-group-item active">添加文章</a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="page-header">
+					<h1>文章管理</h1>
+				</div>
+				<ul class="nav nav-tabs">
+					<li>
+						<a href="content.html">文章列表</a>
+					</li>
+					<li class="active">
+						<a href="content_post.html">添加文章</a>
+					</li>
+				</ul>
+				<br>
+				<form>
+				  	<div class="form-group">
+				    	<label for="title">标题</label>
+				    	<input type="email" class="form-control" id="title" placeholder="请输入文章标题">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="content">文章内容</label>
+				    	<textarea id="content" class="form-control" placeholder="请输入文章正文部分" rows="8"></textarea>
+				  	</div>
+				  	<div class="checkbox">
+				    	<label>
+				      		<input type="checkbox"> 全局置顶
+				    	</label>
+				    	<button type="submit" class="btn btn-default pull-right">发布文章</button>
+				  	</div>			  	
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;www.10wm9.space&nbsp;&nbsp;鄂ICP备13014270号
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

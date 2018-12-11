@@ -1,0 +1,48 @@
+body{
+	font-family: 'Microsoft YaHei',sans-serif;
+}
+
+/*图像*/
+.wh64{
+	width:64px;
+	height:64px;
+	border-radius: 50%;
+}
+
+/*分页显示*/
+.page-header{
+	margin-top: 0; 
+}
+.page-header h1{
+	margin: 0;
+	font-size: 16px;
+}
+
+/*搜索框设计*/
+.user-search{
+	padding:10px;
+	border:1px solid #ddd;
+	border-top: none;
+}
+
+.modal-footer{
+	text-align: center;
+}
+
+.taglist{
+	padding: 15px;
+}
+.taglist .alert{
+	margin:0 15px 15px 0;
+}
+
+/*footer*/
+#footer{
+	font-weight: 400;
+	text-align: center;
+	padding: 20px;
+}
+
+#dLabel{
+	cursor: pointer;
+}
